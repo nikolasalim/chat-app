@@ -3,7 +3,7 @@ const app = express();
 const Sse = require("json-sse");
 const cors = require("cors");
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 // setting up a fake db
 const db = {};
